@@ -821,7 +821,26 @@ public class AdapterService extends Service {
      */
     public void enableBluetoothInCallService(boolean enable) {
         debugLog("enableBluetoothInCallService() - Enable = " + enable);
-        getPackageManager().setComponentEnabledSetting(
+
+        // Enable service in current user context.
+        enableBluetoothInCallServiceInContext(enable, this);
+
+        final int userId = UserHandle.myUserId();
+
+        if (UserHandle.SYSTEM.getIdentifier() != userId) {
+            // If this service is not enabled for the system user, it will not work for others.
+            debugLog("Enabling BluetoothInCallService for system in addition to user id "
+                    + userId);
+
+            final Context systemContext = getApplicationContext()
+                    .createContextAsUser(UserHandle.SYSTEM, /* flags */ 0);
+
+            enableBluetoothInCallServiceInContext(enable, systemContext);
+        }
+    }
+
+    void enableBluetoothInCallServiceInContext(boolean enable, Context context) {
+        context.getPackageManager().setComponentEnabledSetting(
                 BLUETOOTH_INCALLSERVICE_COMPONENT,
                 enable ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED
                         : PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
