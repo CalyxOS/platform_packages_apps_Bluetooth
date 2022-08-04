@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb433759_70b66e32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-08-04T17:48:22Z",
+      "side": 1,
+      "message": "Admittedly, there\u0027s some restructuring of the Bluetooth code in the master branch of AOSP, but if this issue still exists in 13, it should be fairly simple to adapt this. I can\u0027t think of any downsides to the changed behavior in this patch, but I could certainly be missing something.",
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
