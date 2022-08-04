@@ -33,6 +33,24 @@
       "message": "This could be sent to AOSP, I\u0027d be curious as to what Google thinks.",
       "revId": "c35b1e466e402c346b5b6973130eae533830815c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9384b779_24a3bf19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-08-04T20:19:21Z",
+      "side": 1,
+      "message": "https://android-review.googlesource.com/c/platform/packages/apps/Bluetooth/+/2176082",
+      "parentUuid": "160ec39a_935d33cc",
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
