@@ -51,6 +51,47 @@
       "parentUuid": "160ec39a_935d33cc",
       "revId": "c35b1e466e402c346b5b6973130eae533830815c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "576be4c1_bfc050cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:26:30Z",
+      "side": 1,
+      "message": "Need to add some reviewers/owners",
+      "parentUuid": "9384b779_24a3bf19",
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba131ca6_d300421a",
+        "filename": "src/com/android/bluetooth/btservice/AdapterService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:26:30Z",
+      "side": 1,
+      "message": "If I\u0027m not mistaken, for any user that is not system, if enable is false, it will disable the service for the system user too (thereby disabling it for all)?\nIf so, this is not the desired behaviour.\nI believe the logic needs to be more complex to ensure that the service is only disabled when all users have disabled it",
+      "range": {
+        "startLine": 830,
+        "startChar": 12,
+        "endLine": 830,
+        "endChar": 55
+      },
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
