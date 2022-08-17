@@ -73,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c7a2de49_76143317",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:31:12Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/platform/superproject/+/master:packages/apps/\nI don\u0027t see the Bluetooth app there anymore for some reason? Seems to have moved to modules?",
+      "parentUuid": "576be4c1_bfc050cd",
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ba131ca6_d300421a",
         "filename": "src/com/android/bluetooth/btservice/AdapterService.java",
         "patchSetId": 1
