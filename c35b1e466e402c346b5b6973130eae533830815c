@@ -107,6 +107,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "048fbc19_ef26ac4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-08-31T11:09:51Z",
+      "side": 1,
+      "message": "This has changed a lot upstream, affecting 13, and might no longer be an issue:\nhttps://android.googlesource.com/platform/packages/modules/Bluetooth/+/a511f34226492fe8b30421fa976236ec884d18b7%5E%21/#F2\n\nNot worth considering for 12L at this time in my opinion; going to abandon this.",
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ba131ca6_d300421a",
