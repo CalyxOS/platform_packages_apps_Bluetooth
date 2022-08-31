@@ -152,6 +152,30 @@
       },
       "revId": "c35b1e466e402c346b5b6973130eae533830815c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae1e4b15_5ddda96d",
+        "filename": "src/com/android/bluetooth/btservice/AdapterService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-08-31T03:46:08Z",
+      "side": 1,
+      "message": "Actually, given that two users cannot be in a call at the same time (right?), is there any scenario in which this would be a problem? The service is already dynamically enabled before a call and disabled at some point after a call.\n\nEven if that\u0027s all true, though, the behavior should be verified when switching back and forth between users multiple times just to be sure...",
+      "parentUuid": "17862550_b9d7fd41",
+      "range": {
+        "startLine": 830,
+        "startChar": 12,
+        "endLine": 830,
+        "endChar": 55
+      },
+      "revId": "c35b1e466e402c346b5b6973130eae533830815c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
